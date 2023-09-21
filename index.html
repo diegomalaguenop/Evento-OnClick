@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <div class="nav">
+            <div class="flex-container">
+                <h1 class="nav-title">Dojonary</h1>
+                <ul class="nav-links">
+                    <input class="busqueda" type="text" placeholder="Search">
+                    <li>
+                        <button class="btn" onclick="logout(this)">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="flex-container main">
+
+            <!-- 2/3 width column -->
+            <div class="col-2">
+
+                <!-- user info card -->
+                <div class="card user-card">
+                    <div class="card-body">
+                        <h1 class="cardName">ninja   </h1>
+                        <h3 class="title"> noun</h3>
+                        <h4 class="subtitle"> Prural: ninjas</h4> 
+                        <button onclick="likeButton(this)" class="card-button">13 likes</button>                   
+                    </div>
+                    <div class="card-description">
+                        <p>A practitioner skilled in the <br> <a href="#">Japanese</a> art of <a href="#">ninjutsu</a> </p>
+                    </div>
+                </div>
+
+                <!-- user education card -->
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="cardName">ninja   </h1>
+                        <h3 class="title"> noun</h3>
+                        <h4 class="subtitle"> Prural: ninjas</h4> 
+                        <button onclick="likeButton(this)" class="card-button">37 likes</button>                   
+                    </div>
+                    <div class="card-description">
+                        <p>A <a href="#">programmer</a> who breaks <br> down problems with <a href="#">zen</a>- like focus </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 1/3 width column -->
+            <div class="col-1">
+                <!-- your connections card -->
+                <div class="card">
+                        <div class="card-body">
+                            <p class="text-description">Dojonary is <br> defined by <strong>YOU</strong></p>
+                            <button onclick="removeButton(this)" class="btn-description">Add Definition</button>                   
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                
+
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    
+    </body>
+</html>
